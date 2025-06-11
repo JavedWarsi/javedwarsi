@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW-Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/logo/jw-logo.png">
+    <script src="js/main.js"></script>
+   
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/images/logo/jw-logo.png" alt="logo" style="height:40px; background-color: #0dcaf0; padding: 4px; border-radius: 50%;">
+                <!-- <span class="ms-2 fw-bold" style="color:#0dcaf0;">JW-Portfolio</span> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <span class="navbar-text d-none d-lg-inline ms-lg-3">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="fw-bold">Javed</span> <span style="color:aqua;">Warsi</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center w-100 min-vh-100" style="width:100vw; min-height:100vh; overflow:hidden;">
+        <div class="container-fluid px-0">
+            <div class="row align-items-center flex-lg-row flex-column-reverse mx-0 w-100">
+                <!-- Left Section -->
+                <div class="col-lg-7 leftcontent text-lg-start text-center reveal mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-3">
+                        Hey! I'm 
+                        <span style="color:#0dcaf0; background-color: #e3f2fd; padding: 0 8px; border-radius: 6px;">Javed Warsi</span>
+                        <br>
+                        <span id="typed-text" style="color:#0dcaf0;"></span>
+                        <span id="typed-cursor" style="color:#0dcaf0;">|</span>
+                    </h1>
+                    <p class="lead border-start border-4 ps-3 mb-4" style="border-color:#0dcaf0 !important;"></p>
+                        Full Stack Developer passionate about building innovative, user-friendly applications.<br>
+                        Experienced in Android app development & Network Management.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-lg-start justify-content-center mb-3">
+                        <a href="images/Javed's_Resume.pdf" class="btn btn-custom px-4" target="_blank" download>
+                            <i class="fa-solid fa-download me-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline-info px-4">
+                            <i class="fa-solid fa-envelope me-2"></i>Contact
+                        </a>
+                    </div>
+                    <div class="icon mt-3">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-1">
+                                <a href="https://www.facebook.com/javed.warsi.370" target="_blank" class="text-info fs-4"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item mx-1">
+                                <a href="https://www.instagram.com/warsi5656/" target="_blank" class="text-danger fs-4"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item mx-1">
+                                <a href="https://www.linkedin.com/in/javed-warsi-50a9b4272/" target="_blank" class="text-primary fs-4"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item mx-1">
+                                <a href="https://github.com/JavedWarsi" target="_blank" class="text-dark fs-4"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li class="list-inline-item mx-1">
+                                <a href="#" target="_blank" class="text-info fs-4"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right Section -->
+                <div class="col-lg-5 d-flex justify-content-lg-end justify-content-center align-items-center reveal mb-4 mb-lg-0">
+                    <div class="ring">
+                        <div class="image position-relative rounded-circle overflow-hidden" style="width:280px; height:280px; border:4px solid #0dcaf0;">
+                            <img src="images/profile3.png" alt="Profile Image" style="width:280px; height:280px; object-fit:cover;">
+                            <!-- <span class="position-absolute bottom-0 end-0 translate-middle p-2 bg-info rounded-circle border border-white" style="width:32px; height:32px;">
+                                <i class="fa-solid fa-code text-white"></i>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+    .hero-section {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 40px;
+        margin: 0;
+        background: linear-gradient(120deg, #e3f2fd 0%, #ffffff 100%);
+        overflow: hidden;
+    }
+    @media (max-width: 991px) {
+        .hero-section .image {
+            width: 200px !important;
+            height: 200px !important;
+        }
+        .hero-section .image img {
+            width: 200px !important;
+            height: 200px !important;
+        }
+    }
+    @media (max-width: 767px) {
+        .hero-section {
+            min-height: 80vh;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .hero-section .image {
+            width: 140px !important;
+            height: 140px !important;
+        }
+        .hero-section .image img {
+            width: 140px !important;
+            height: 140px !important;
+        }
+        .hero-section h1 {
+            font-size: 2rem;
+        }
+    }
+    </style>
+    <!-- About Section -->
+    <section class="aboutsection row align-items-center glass reveal min-vh-100 w-100 m-0" id="about" style="min-height:100vh; width:100vw; position:relative; overflow:hidden;">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0 d-flex justify-content-center align-items-center" style="height:100%;">
+            <div class="ring">
+                <div class="image2">
+                    <img src="images/profile1.png" alt="About Image">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center" style="height:100%;">
+            <h1 class="h1">About <span>Me</span></h1>
+            <h2>I'm <span>Software developer and QA Engineer</span></h2>
+            <p class="p border-start border-4 ps-3" style="border-color:rgb(3, 4, 4) !important;">
+                As a dedicated Software Developer and QA Engineer, I specialize in building robust, scalable applications and ensuring their quality through rigorous testing. My expertise spans both frontend and backend development, allowing me to deliver seamless user experiences and reliable solutions. I am passionate about writing clean, maintainable code and implementing best practices in software quality assurance to deliver high-performing products.
+            </p>
+            <div>
+                <a href="aboutme.html" class="btn btn-custom me-2">Read More..</a>
+                <button class="btn btn-custom"><a href="aboutme.html">Contact</a></button>
+            </div>
+        </div>
+        <!-- Skills Section -->
+        </section>
+        <!-- Skills Section -->
+        <section class="skills-section glass reveal py-5" id="skills" style="width:100vw; position:relative; overflow:hidden;">
+            <div class="container">
+                <h2 class="h3 mb-4 text-center">My <span>Skills</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush text-start mb-4">
+                            <li class="list-group-item">
+                                <strong>Frontend:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%;">HTML/CSS/Nextjs/JS (90%)</div>
+                                </div>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;">Bootstrap/Tailwind (80%)</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Backend:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">Python (Django/Flask) (75%)</div>
+                                </div>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;">PHP (65%)</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Programming Languages:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%;">Python (80%)</div>
+                                </div>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%;">Core Java (75%)</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Mobile:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%;">Android (Java/XML) (85%)</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Database:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%;">MySQL (80%)</div>
+                                </div>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" style="width: 70%;">MongoDB (70%)</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Other:</strong>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;">Git & GitHub (85%)</div>
+                                </div>
+                                <div class="progress my-2" style="height: 18px;">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;">Network Management (75%)</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section glass reveal py-5" id="service">
+        <h1 class="h2 mb-4 text-center">Our <span>Services</span></h1>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2 style="color: aqua;"><i class="fa-solid fa-code"></i> Web Development</h2>
+                        <p>I specialize in designing and developing modern, high-performing, and user-friendly websites. From simple landing pages to complex web applications, I ensure an intuitive experience with clean, efficient, and scalable code.</p>
+                        <h3>Technologies I Use</h3>
+                        <ul class="text-start">
+                            <li><strong>Frontend:</strong> HTML, CSS(Tailwind, Bootstrap), JavaScript</li>
+                            <li><strong>Backend:</strong> Python (Django, Flask), PHP</li>
+                            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                            <li><strong>Version Control:</strong> Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2 style="color: aqua;"><i class="fa-brands fa-android"></i> Android App Development</h2>
+                        <p>I specialize in building high-performance, user-friendly, and feature-rich Android applications. Whether it's a business app, social platform, or custom utility, I bring your ideas to life with cutting-edge mobile technologies.</p>
+                        <h3>Technologies I Use</h3>
+                        <ul class="text-start">
+                            <li><strong>Languages:</strong> Core Java</li>
+                            <li><strong>Frameworks:</strong> XML</li>
+                            <li><strong>Databases:</strong> SQLite, Firebase</li>
+                            <li><strong>Version Control:</strong> Git & GitHub</li>
+                            <li><strong>Tools:</strong> Android Studio, Firebase</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2 style="color: aqua;"><i class="fa-solid fa-network-wired"></i> Network Management</h2>
+                        <p>I provide professional network management services to ensure smooth, secure, and efficient communication across your IT infrastructure. From setting up networks to troubleshooting and security, I offer complete solutions.</p>
+                        <h3>What I Offer</h3>
+                        <ul class="text-start">
+                            <li><strong>Network Setup & Configuration</strong> – LAN, WAN, VPN, and cloud-based networks.</li>
+                            <li><strong>Performance Optimization</strong> – Ensuring fast and stable network connections.</li>
+                            <li><strong>Network Security</strong> – Firewalls, encryption, and intrusion prevention.</li>
+                            <li><strong>Wireless Networking</strong> – WiFi setup, troubleshooting, and optimization.</li>
+                            <li><strong>Server Management</strong> – Cloud, dedicated, and on-premise servers.</li>
+                            <li><strong>Monitoring & Troubleshooting</strong> – Real-time network analysis and issue resolution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .services-section .service-card {
+            background: rgba(255,255,255,0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(13,202,240,0.08);
+            padding: 30px 20px;
+            margin-bottom: 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .services-section .service-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(13,202,240,0.18);
+        }
+        @media (max-width: 991px) {
+            .services-section .service-card {
+                padding: 24px 12px;
+            }
+        }
+        @media (max-width: 767px) {
+            .services-section .service-card {
+                padding: 18px 6px;
+            }
+        }
+    </style>
+    <!-- Projects Section -->
+    <section class="projectsection reveal" id="project">
+        <h1 class="h3 text-center">Our <span>Projects</span></h1>
+        <p class="text-center text-secondary">My projects which are completed and are live on the web</p>
+        <div class="mainpro d-flex flex-wrap justify-content-center gap-3">
+            <div class="project-card">
+                <h3>Full Stack Web Development</h3>
+                <p>Developed and deployed responsive web applications with modern technologies.</p>
+            </div>
+            <div class="project-card">
+                <h3>Android App Development</h3>
+                <p>Created Android applications with a focus on performance and UI/UX.</p>
+            </div>
+            <div class="project-card">
+                <h3>Network Management</h3>
+                <p>Worked on network security, optimization, and system monitoring.</p>
+            </div>
+            <div class="project-card">
+                <h3>AI-Powered Photo Sharing</h3>
+                <p>Built an AI-driven image-sharing platform for enhanced user engagement.</p>
+            </div>
+        </div>
+        <div class="project-table mt-4">
+            <h3 class="text-center">Project Statistics</h3>
+            <table class="table table-bordered text-center">
+                <tr>
+                    <th>Project 1</th>
+                    <th>Project 2</th>
+                    <th>Project 3</th>
+                    <th>Project 4</th>
+                </tr>
+                <tr>
+                    <td>Full Stack Web</td>
+                    <td>Android App</td>
+                    <td>Network Mgmt</td>
+                    <td>AI Photo Sharing</td>
+                </tr>
+                <tr>
+                    <td>✔ Completed</td>
+                    <td>✔ Completed</td>
+                    <td>✔ Completed</td>
+                    <td>🚀 Live</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contactme text-center glass reveal" id="contact">
+        <h1 class="h4">Contact <span>Me</span></h1>
+        <p class="text-secondary">
+            If you have any questions or want to get in touch,<br>
+            please fill out the form below or use any of the contact options.
+        </p>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="mx-auto" style="max-width: 400px;">
+            <div class="mb-3 text-start">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="contactName" name="name" required>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="contactEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="contactEmail" name="email" required>
+            </div>
+            <div class="mb-3 text-start">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+        </form>
+        <div class="mt-4">
+            <h5 class="mb-3">Contact Via : </h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="mailto:your.email@example.com" class="btn btn-outline-info">
+                    <i class="fa-solid fa-envelope me-2"></i>Email
+                </a>
+                <a href="https://wa.me/919999999999" target="_blank" class="btn btn-outline-success">
+                    <i class="fa-brands fa-whatsapp me-2"></i>WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/in/javed-warsi-50a9b4272/" target="_blank" class="btn btn-outline-primary">
+                    <i class="fa-brands fa-linkedin-in me-2"></i>LinkedIn
+                </a>
+                <a href="tel:+919999999999" class="btn btn-outline-dark">
+                    <i class="fa-solid fa-phone me-2"></i>Call
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white shadow-sm py-4 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-2" style="color:#0dcaf0;">JW-Portfolio</h5>
+                    <p class="text-secondary mb-0">&copy; 2024 Javed Warsi. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="fw-bold mb-2">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-secondary text-decoration-none">About</a></li>
+                        <li><a href="#service" class="text-secondary text-decoration-none">Services</a></li>
+                        <li><a href="#project" class="text-secondary text-decoration-none">Portfolio</a></li>
+                        <li><a href="#contact" class="text-secondary text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-2">Connect</h6>
+                    <a href="https://github.com/JavedWarsi" target="_blank" class="text-dark me-3"><i class="fa-brands fa-github fs-5"></i></a>
+                    <a href="https://www.linkedin.com/in/javed-warsi-50a9b4272/" target="_blank" class="text-primary me-3"><i class="fa-brands fa-linkedin-in fs-5"></i></a>
+                    <a href="https://www.instagram.com/warsi5656/" target="_blank" class="text-danger me-3"><i class="fa-brands fa-instagram fs-5"></i></a>
+                    <a href="https://www.facebook.com/javed.warsi.370" target="_blank" class="text-info"><i class="fa-brands fa-facebook fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if(window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: target.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Reveal animation on scroll
+        function revealOnScroll() {
+            document.querySelectorAll('.reveal').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if(rect.top < window.innerHeight - 80) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('DOMContentLoaded', revealOnScroll);
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me & Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f0f4f8 0%, #d9e7fa 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        .main-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 0;
+            overflow: hidden;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            padding: 40px 32px 24px 32px;
+            background: linear-gradient(90deg, #e0f7fa 0%, #f8fafc 100%);
+        }
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(42,82,152,0.15);
+            border: 4px solid #fff;
+        }
+        .profile-info h1 {
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+        .profile-info p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+        .highlight {
+            color: #2a5298;
+            font-weight: bold;
+        }
+        .section-title {
+            color: #1e3c72;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        .info-section {
+            padding: 0 32px 32px 32px;
+        }
+        .projects, .certificates {
+            background: #f5faff;
+            border-left: 4px solid #2a5298;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 24px;
+        }
+        .skills-list li {
+            background: #e0f7fa;
+            color: #1e3c72;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        .contact-section {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 18px 24px;
+            margin-bottom: 0;
+        }
+        .contact-section a {
+            color: #13c2f0;
+            text-decoration: underline;
+        }
+        /* Services Section Styles */
+        .services-section {
+            background: linear-gradient(120deg, #e0f7fa 0%, #f8fafc 100%);
+            padding: 60px 0 40px 0;
+        }
+        .services-section h1 span {
+            color: #13c2f0;
+        }
+        .services-section .service-card {
+            background: rgba(255,255,255,0.97);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(13,202,240,0.08);
+            padding: 30px 20px;
+            margin-bottom: 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .services-section .service-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(13,202,240,0.18);
+        }
+        .services-section h2 {
+            color: #13c2f0 !important;
+            font-size: 1.3rem;
+        }
+        .services-section h3 {
+            color: #1e3c72;
+            font-size: 1.1rem;
+            margin-top: 18px;
+        }
+        @media (max-width: 991px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                padding: 32px 16px 16px 16px;
+            }
+            .info-section {
+                padding: 0 16px 24px 16px;
+            }
+            .services-section {
+                padding: 40px 0 24px 0;
+            }
+        }
+        @media (max-width: 600px) {
+            .main-container { padding: 0; }
+            .profile-section { padding: 20px 8px 12px 8px; }
+            .profile-img { width: 100px; height: 100px; }
+            .info-section { padding: 0 8px 16px 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+            <div class="profile-info">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm <span class="highlight">Javed Warsi</span>, a passionate <span class="highlight">Software Developer</span> and <span class="highlight">QA Engineer</span> with a strong background in web technologies, software testing, and quality assurance. I thrive on building robust digital solutions and ensuring they meet the highest standards of quality and reliability. My expertise spans both development and testing, allowing me to deliver well-crafted, thoroughly tested applications.
+                </p>
+            </div>
+        </div>
+        <!-- Info Section -->
+        <div class="info-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-title"><i class="fa-solid fa-diagram-project"></i> Projects</div>
+                    <div class="projects">
+                        <ul class="mb-0">
+                            <li>
+                                <strong>Portfolio Website:</strong> Designed and developed a responsive personal portfolio using HTML, CSS, and JavaScript to showcase my skills, projects, and certifications.
+                            </li>
+                            <li>
+                                <strong>Task Manager App:</strong> Built a full-stack task management application with user authentication, real-time updates, and a clean UI using React and Node.js. Implemented comprehensive unit and integration tests to ensure reliability.
+                            </li>
+                            <li>
+                                <strong>Appointment Portal (Internship, 3 months):</strong> Developed an interactive web using Next.js and MongoDB during my internship. The portal fetches and displays weather data from public APIs, features dynamic charts, and supports location-based search. Implemented automated testing for API integration and UI components.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-title"><i class="fa-solid fa-certificate"></i> Certifications</div>
+                    <div class="certificates">
+                        <ul class="mb-0">
+                            <li>
+                                <strong>Full Stack Development Python With Django</strong> – Softpro India, 2023
+                            </li>
+                            <li>
+                                <strong>Mern stack Development</strong> – PW Skills, 2023
+                            </li>
+                            <li>
+                                <strong>Android Development With Core Java</strong> – Netcamp Solutions Pvt Ltd, 2024
+                            </li>
+                            <li>
+                                <strong>Network Management with Linux</strong> – Netcamp Solutions Pvt Ltd, 2024
+                            </li>
+                            
+                             <li>
+                                <strong>QA Engineer</strong> – Qspides, 2025
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-title"><i class="fa-solid fa-laptop-code"></i> Skills</div>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Git &amp; GitHub</li>
+                <li>REST APIs</li>
+                <li>JSON</li>
+                <li>Responsive &amp; Mobile-First Design</li>
+                <li>Manual &amp; Automated Testing</li>
+                <li>Selenium</li>
+                <li>Jest</li>
+                <li>Mocha &amp; Chai</li>
+                <li>Test Planning &amp; Documentation</li>
+            </ul>
+            <div class="section-title"><i class="fa-solid fa-envelope"></i> Contact</div>
+            <div class="contact-section">
+                Feel free to reach out via <a href="mailto:your.email@example.com">email</a> or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <section class="services-section" id="service">
+        <div class="container">
+            <h1 class="h2 mb-5 text-center">Our <span>Services</span></h1>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2><i class="fa-solid fa-code"></i> Web Development</h2>
+                        <p>I specialize in designing and developing modern, high-performing, and user-friendly websites. From simple landing pages to complex web applications, I ensure an intuitive experience with clean, efficient, and scalable code.</p>
+                        <h3>Technologies I Use</h3>
+                        <ul class="text-start">
+                            <li><strong>Frontend:</strong> HTML, CSS (Tailwind, Bootstrap), JavaScript</li>
+                            <li><strong>Backend:</strong> Python (Django, Flask), PHP</li>
+                            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+                            <li><strong>Version Control:</strong> Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2><i class="fa-solid fa-vial"></i> QA Engineering & Testing</h2>
+                        <p>I provide comprehensive quality assurance services, including manual and automated testing for web and mobile applications. My approach ensures your software is reliable, secure, and user-friendly.</p>
+                        <h3>Testing Expertise</h3>
+                        <ul class="text-start">
+                            <li><strong>Manual Testing:</strong> Functional, Regression, UI/UX</li>
+                            <li><strong>Automation:</strong> Selenium, Jest, Mocha, Cypress</li>
+                            <li><strong>API Testing:</strong> Postman, REST Assured</li>
+                            <li><strong>Test Documentation:</strong> Test plans, cases, and reports</li>
+                            <li><strong>CI/CD Integration:</strong> Automated test pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 d-flex">
+                    <div class="service-card flex-fill h-100">
+                        <h2><i class="fa-solid fa-network-wired"></i> Network Management</h2>
+                        <p>I provide professional network management services to ensure smooth, secure, and efficient communication across your IT infrastructure. From setting up networks to troubleshooting and security, I offer complete solutions.</p>
+                        <h3>What I Offer</h3>
+                        <ul class="text-start">
+                            <li><strong>Network Setup & Configuration</strong> – LAN, WAN, VPN, and cloud-based networks.</li>
+                            <li><strong>Performance Optimization</strong> – Ensuring fast and stable network connections.</li>
+                            <li><strong>Network Security</strong> – Firewalls, encryption, and intrusion prevention.</li>
+                            <li><strong>Wireless Networking</strong> – WiFi setup, troubleshooting, and optimization.</li>
+                            <li><strong>Server Management</strong> – Cloud, dedicated, and on-premise servers.</li>
+                            <li><strong>Monitoring & Troubleshooting</strong> – Real-time network analysis and issue resolution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5 py-4" style="background: linear-gradient(90deg, #e0f7fa 0%, #f8fafc 100%); text-align: center; color: #1e3c72; font-size: 1.05rem;">
+        <div class="container">
+            &copy; 2024 Javed Warsi. All rights reserved. |
+            <a href="mailto:your.email@example.com" style="color:#13c2f0; text-decoration:underline;">Contact</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" style="color:#13c2f0; text-decoration:underline;">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </footer>
+    <!-- Bootstrap JS (optional, for some components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
